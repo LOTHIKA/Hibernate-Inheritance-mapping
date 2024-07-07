@@ -22,7 +22,7 @@ public class TPCValidation {
 		Person validPerson1= new Person("Shiva","Nellai Street,Karur");
 		Customer validPerson2= new Customer("Shravan","Nehru Street,Madurai","shiva123@gmail.com","Regular","8778580344");
 		
-		Employee validPerson3= new Employee("CEO", 10000, LocalDate.of(2020, 10, 07),"Adithi","Gandhi street, Chennai");
+		Employee validPerson3= new Employee("Adithi", 10000, LocalDate.of(2020, 10, 07),"CEO","Gandhi street, Chennai");
 		Set<ConstraintViolation<Person>> violations = validator.validate(validPerson1);
 
 		violations =validator.validate(validPerson1);

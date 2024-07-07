@@ -24,7 +24,7 @@ public class Person {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	int id;
-	@Size(min=1,message="Invalid name.Size should be between 3 to 20")
+	@Size(min=1,message="Invalid name.Size should be maximum 1")
 	@NotNull(message="Please enter your name.")
 	private String name; 
 	
